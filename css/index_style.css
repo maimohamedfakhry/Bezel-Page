@@ -4,8 +4,14 @@
   }
 }
 .navbar {
-  padding: 0px;
   background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 1rem;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+  }
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .brd {
@@ -18,8 +24,9 @@
 }
 .MYBTN {
   position: fixed;
-  right: 50px;
-  bottom: 50px;
+  right: 30px;
+  bottom: 30px;
+  z-index: 9999999999999999999999999999999;
   display: none;
 }
 /***********************************************************************************/
@@ -88,7 +95,7 @@
 
 #home .carousel-control-next {
   left: 0;
-  top: 300px;
+  top: 302px;
 }
 #home .carousel-control-prev {
   left: 0;
@@ -104,7 +111,7 @@
 #home .carousel-control-prev-icon i {
   padding: 10px;
   width: 100%;
-  border: 2px solid white;
+  border: 1px solid white;
   color: white;
   top: 0;
   left: 0;
@@ -152,27 +159,138 @@
   animation: mymove 6s infinite;
   color: #00d5ee;
 
-  -webkit-animation: mymove 6.5s infinite;
+  -webkit-animation: mymove 7.5s infinite;
 }
 
 @keyframes mymove {
   0% {
     content: "Softwares";
   }
-  30% {
+  2% {
+    content: "Software";
+  }
+  4% {
+    content: "Softwar";
+  }
+  6% {
+    content: "Softwa";
+  }
+  8% {
+    content: "Softw";
+  }
+  10% {
+    content: "Soft";
+  }
+  12% {
+    content: "Sof";
+  }
+  14% {
+    content: "So";
+  }
+  16% {
+    content: "S";
+  }
+  22% {
     content: "";
   }
-  35% {
+  22% {
+    content: "W";
+  }
+  24% {
+    content: "We";
+  }
+  26% {
+    content: "Web";
+  }
+  28% {
+    content: "Webs";
+  }
+  30% {
+    content: "Websi";
+  }
+  32% {
+    content: "Websit";
+  }
+  34% {
+    content: "Website";
+  }
+  36% {
     content: "Websites";
   }
-  65% {
+  38% {
+    content: "Website";
+  }
+  40% {
+    content: "Websit";
+  }
+  42% {
+    content: "Websi";
+  }
+  44% {
+    content: "Webs";
+  }
+  48% {
+    content: "Web";
+  }
+  50% {
+    content: "We";
+  }
+  52% {
+    content: "W";
+  }
+  58% {
     content: "";
   }
-  95% {
+  60% {
+    content: "A";
+  }
+  62% {
+    content: "Ap";
+  }
+  64% {
+    content: "App";
+  }
+  66% {
     content: "Apps";
   }
-  100% {
+  68% {
+    content: "App";
+  }
+  70% {
+    content: "Ap";
+  }
+  72% {
+    content: "A";
+  }
+  78% {
     content: "";
+  }
+  80% {
+    content: "S";
+  }
+  82% {
+    content: "So";
+  }
+  84% {
+    content: "Sof";
+  }
+  86% {
+    content: "Soft";
+  }
+  88% {
+    content: "Softw";
+  }
+  90% {
+    content: "Softwa";
+  }
+  92% {
+    content: "Softwar";
+  }
+  94% {
+    content: "Software";
+  }
+  100% {
+    content: "Softwares";
   }
 }
 #about .stle {
@@ -195,38 +313,9 @@
   border: 1px solid black;
 }
 /**********************************************************************************/
-#creationteam {
-  min-height: 100vh;
-}
 
-#creationteam .head1 {
-  font-size: 6rem;
-  color: rgba(217, 217, 217, 0.7);
-  font-weight: 700;
-}
-@media (min-width: 800px) {
-  #creationteam .head2 {
-    font-size: 3rem;
-    color: black;
-    left: 38%;
-    top: 60px;
-  }
-}
-@media (min-width: 601px) and (max-width: 799px) {
-  #creationteam .head2 {
-    font-size: 3rem;
-    color: black;
-    left: 28%;
-    top: 60px;
-  }
-}
-@media (max-width: 600px) {
-  #creationteam .head2 {
-    font-size: 3rem;
-    color: black;
-    left: 20%;
-    top: 60px;
-  }
+.title h2 {
+  font-size: 2.3em;
 }
 #creationteam .iconn {
   color: white;
@@ -260,34 +349,9 @@
 #pricing {
   background-color: #f7f7f7;
 }
-#pricing .head1 {
-  font-size: 6rem;
-  color: rgba(217, 217, 217, 0.7);
-  font-weight: 700;
-}
-@media (min-width: 800px) {
-  #pricing .head2 {
-    font-size: 3rem;
-    color: black;
-    left: 38%;
-    top: 60px;
-  }
-}
-@media (min-width: 601px) and (max-width: 799px) {
-  #pricing .head2 {
-    font-size: 3rem;
-    color: black;
-    left: 28%;
-    top: 60px;
-  }
-}
-@media (max-width: 600px) {
-  #pricing .head2 {
-    font-size: 3rem;
-    color: black;
-    left: 20%;
-    top: 60px;
-  }
+
+.title1 h2 {
+  font-size: 2.3em;
 }
 #pricing .btn {
   transform: translate(0px, 3px);
@@ -345,41 +409,7 @@
   top: 60px;
 }
 /********************************************************************************/
-.carsl {
-  background-color: #787878;
-}
-.carsl .carousel-indicators li {
-  background-color: white;
-}
-.carsl .carousel-control-next-icon,
-.carsl .carousel-control-prev-icon {
-  background-image: none;
-}
-.carsl .carousel-control-prev {
-  left: -60px;
-}
-.carsl .carousel-control-next {
-  right: -40px;
-}
 
-@media (min-width: 768px) {
-  .carsl .immg {
-    top: -50px;
-    left: 45%;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .carsl .immg {
-    top: -50px;
-    left: 35%;
-  }
-}
-@media (max-width: 575px) {
-  .carsl .immg {
-    top: -50px;
-    left: 22%;
-  }
-}
 /************************************************************************************/
 #contact .form-control {
   border-radius: 0;
